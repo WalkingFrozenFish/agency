@@ -1,0 +1,127 @@
+.wedo {
+    padding: 123px 0px;
+    /* Landscape tablets and medium desktops */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding: 100px 0px;
+    }
+
+    /* Portrait tablets and small desktops */
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 80px 0px;
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+        padding: 60px 0px;
+    }
+    .container_wedo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (min-width: 992px) and (max-width: 1199px) {
+            max-width: 80%;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            max-width: 80%;
+        }
+        @media (max-width: 767px) {
+            max-width: 80%;
+        }
+        .wedo_main_item {
+            display: flex;
+            flex-basis: 45%;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            margin-bottom: 67px;
+            @media (min-width: 768px) and (max-width: 991px) {
+                flex-basis: 100%;
+                display: flex;
+                align-items: center;
+            }
+            @media (max-width: 767px) {
+                flex-basis: 100%;
+                display: flex;
+                align-items: center;
+            }
+            span {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 15px;
+                letter-spacing: 4px;
+                display: block;
+                color: #FB7161;
+            }
+            h2 {
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 39px;
+                margin-bottom: 36px;
+                color: #4A4A4A;
+                @media (max-width: 480px) {
+                    text-align: center;
+                }
+            }
+            a {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                background-color: #FB7161;
+                box-shadow: 0px 30px 50px rgba(251, 113, 97, 0.344433);
+                padding: 12px 26px;
+                color: #FFFFFF;
+                display: inline-block;
+                border-radius: 8px;
+            }
+        }
+        .wedo_item {
+            display: flex;
+            flex-basis: 45%;
+            margin-bottom: 67px;
+            @media (min-width: 768px) and (max-width: 991px) {
+                flex-basis: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+                justify-content: center;
+            }
+            @media (max-width: 767px) {
+                flex-basis: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+                justify-content: center;
+            }
+            .image {
+                img {
+                    margin-top: 14px;
+                    
+                }
+                @media (min-width: 768px) and (max-width: 991px) {
+                    align-self: flex-start;
+                }
+                @media (max-width: 767px) {
+                    align-self: flex-start;
+                }
+            }
+            .text_block {
+                padding-left: 14px;
+                h2 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 58px;
+                    color: #4A4A4A;
+                    
+                }
+                p {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #808393;    
+                    max-width: 323px;
+                }
+            }
+        }
+    }
+}

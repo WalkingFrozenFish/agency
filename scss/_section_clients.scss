@@ -1,0 +1,136 @@
+.clients {
+    margin-bottom: 123px;
+    /* Large desktops and laptops */
+    // @media (min-width: 1200px) {
+
+    // }
+
+    /* Landscape tablets and medium desktops */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        margin-bottom: 100px;
+    }
+
+    /* Portrait tablets and small desktops */
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-bottom: 80px;
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    /* Portrait phones and smaller */
+    @media (max-width: 480px) {
+        margin-bottom: 30px;
+    }
+    .container_clients {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (min-width: 992px) and (max-width: 1199px) {
+            max-width: 80%;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            max-width: 80%;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 767px) {
+            max-width: 80%;
+            flex-wrap: wrap;
+        }
+        .left_block {
+            flex-basis: 50%;
+            width: 529px;
+            height: 376px;
+            background-color: #5353EE;
+            box-shadow: 0px 30px 50px 25px rgba(41, 39, 66, 0.3);
+            border-radius: 8px;
+            @media (min-width: 992px) and (max-width: 1199px) {
+                width: 400px;
+                height: 300px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                flex-basis: 100%;
+                order: 2;
+            }
+            @media (max-width: 767px) {
+                flex-basis: 100%;
+                order: 2;
+            }
+            @media (max-width: 480px) {
+                width: 200px;
+                height: 190px;
+            }
+        }
+        .right_block {
+            flex-basis: 50%;
+            padding-left: 90px;
+            @media (min-width: 768px) and (max-width: 991px) {
+                flex-basis: 100%;
+                order: 1;
+                padding-left: 0px;
+            }
+            @media (max-width: 767px) {
+                flex-basis: 100%;
+                order: 1;
+                padding-left: 0px;
+            }
+            span {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 15px;    
+                letter-spacing: 4px;
+                display: block;
+                color: #FB7161;  
+                @media (min-width: 768px) and (max-width: 991px) {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 12px;
+                }   
+                @media (max-width: 767px) {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 12px;
+                }          
+            }
+            h2 {
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 39px;
+                margin-bottom: 28px;
+                color: #4A4A4A;
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    font-size: 24px;
+                    margin-bottom: 24px;
+                }
+                @media (min-width: 768px) and (max-width: 991px) {
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                @media (max-width: 767px) {
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                @media (max-width: 480px) {
+                    text-align: center;
+                }
+            }
+            p {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 29px;
+                color: #4A4A4A;
+                @media (min-width: 768px) and (max-width: 991px) {
+                    text-align: center;
+                    margin-bottom: 34px;
+                }
+                @media (max-width: 767px) {
+                    text-align: center;
+                    margin-bottom: 34px;
+                }
+            }
+        }
+    }
+}

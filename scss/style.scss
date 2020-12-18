@@ -1,0 +1,41 @@
+// Import styles
+
+@import "_section_hero";
+@import "_section_proof";
+@import "_section_about";
+@import "_section_wedo";
+@import "_section_clients";
+@import "_section_about_second";
+
+
+// Import fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+// font-family: 'Roboto', sans-serif;
+
+
+// Base style
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1090px;
+    margin: auto;
+}
+
+h1, h2, h3, p, span {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}

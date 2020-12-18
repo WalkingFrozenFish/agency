@@ -1,0 +1,150 @@
+.about {
+    padding: 125px 0px;
+    background-image: url("../img/bg_about.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+
+
+    // /* Large desktops and laptops */
+    // @media (min-width: 1200px) {
+
+    // }
+
+    /* Landscape tablets and medium desktops */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding: 100px 30px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 80px 30px;
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+        padding: 50px 20px;
+    }
+
+    /* Portrait phones and smaller */
+    @media (max-width: 480px) {
+
+    }
+
+
+    .container_about {
+
+        .first_line {
+            margin-bottom: 76px;
+            span {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 4px;
+                color: #FB7161; 
+                text-align: center;
+                display: block;
+            }
+            h2 {
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 58px;
+                color: #4A4A4A;
+                margin: 15px 0px;
+                text-align: center;
+            }
+            p {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 29px;
+                text-align: center;
+                color: #4A4A4A;
+            }
+        }
+        .second_line {
+            display: flex;
+            justify-content: space-between;
+            @media (min-width: 768px) and (max-width: 991px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            @media (max-width: 767px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .about_item {
+                &.active {
+                    background-color: #FB7161;
+                    color: #FFFFFF;
+                    transition: 1s;
+                    h2, p, a {
+                        color: #fff;
+                    }
+                }  
+                @media (min-width: 768px) and (max-width: 991px) {
+                    display: flex;
+                    flex-basis: 45%;
+                    justify-content: start;
+                    margin-bottom: 30px;
+                    margin: 0px 15px 30px 15px;
+                }
+                @media (max-width: 767px) {
+                    display: flex;
+                    flex-basis: 90%;
+                    justify-content: start;
+                    margin-bottom: 30px;
+                    margin: 0px 15px 30px 15px;
+                }
+                background: #FFFFFF;
+                box-shadow: 0px 30px 50px 25px rgba(41, 39, 66, 0.06);
+                border-radius: 8px; 
+                padding: 46px 40px 63px 34px;
+                flex-basis: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                transition: 1s;
+                img {
+                    margin-bottom: 45px;
+                    display: flex;
+                    align-self: flex-end;                 
+                }
+                h2 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 58px;
+                    color: #4A4A4A;
+                }
+                p {
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin-left: 23px;
+                    margin-bottom: 29px;
+                    color: #808393;
+                }
+                a {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-left: 23px;
+                    text-decoration-line: underline;
+                    color: #0D0C1F;
+                }
+            }
+            .first {
+                background-image: url("../img/bg_num/01.png");
+                background-repeat: no-repeat;
+                background-position: -15px -15px;
+            }
+            .second {
+                background-image: url("../img/bg_num/02.png");
+                background-repeat: no-repeat;
+                background-position: -15px -15px;
+            }
+            .third {
+                background-image: url("../img/bg_num/03.png");
+                background-repeat: no-repeat;
+                background-position: -15px -15px;
+            }
+            
+        }
+    }
+}

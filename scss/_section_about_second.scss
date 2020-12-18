@@ -1,0 +1,79 @@
+.about_second {
+    padding: 123px 0px;
+
+    /* Landscape tablets and medium desktops */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding: 100px 0px;
+    }
+
+    /* Portrait tablets and small desktops */
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 80px 0px;
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+        padding: 80px 0px;
+    }
+
+    /* Portrait phones and smaller */
+    @media (max-width: 480px) {
+        padding: 60px 0px;
+    }
+    .container_about_second {
+            /* Landscape tablets and medium desktops */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            max-width: 80%;
+        }
+
+        /* Portrait tablets and small desktops */
+        @media (min-width: 768px) and (max-width: 991px) {
+            max-width: 80%;
+        }
+
+        /* Landscape phones and portrait tablets */
+        @media (max-width: 767px) {
+            max-width: 80%;
+        }
+
+        /* Portrait phones and smaller */
+        @media (max-width: 480px) {
+            max-width: 80%;
+        }
+        span {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 15px;
+            letter-spacing: 4px;
+            display: block;
+            text-align: center;
+            color: #FB7161;            
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 58px;
+            text-align: center;
+            margin-bottom: 14px;
+            color: #4A4A4A;
+            @media (max-width: 767px) {
+                font-size: 24px;
+            }
+            @media (max-width: 480px) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 29px;
+            text-align: center; 
+            color: #4A4A4A;
+            @media (max-width: 767px) {
+                line-height: 25px;
+            }
+        }
+    }
+}
